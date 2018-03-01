@@ -108,12 +108,10 @@ $(function () {
 (function () {
     console.log('1');
 Raphael.fn.toJSON = function(callback) {
-var
-    data,
+var data,
     elements = new Array,
-    paper    = this
-    ;
-
+    paper    = this;
+    console.log('paper:', paper);
 for ( var el = paper.bottom; el != null; el = el.next ) {
     data = callback ? callback(el, new Object) : new Object;
 

@@ -5,13 +5,12 @@ $(function () {
     var rect;
     var arrow;
     var paper = Raphael("svg_paper", 800, 600);
-// Draw Arrow
+
     function DrawArrow(x, y) {
     console.log('In Arrow');
         var element = paper.path("M" + x + " " + y);
         element.attr({
-// stroke: Raphael.getColor(),
-            stroke: "yellow",
+            stroke: "#111",
             "stroke-width": 4,
             "arrow-end": "classic-medium-medium"
         });
@@ -105,20 +104,6 @@ $(function () {
         paper.clear();
     });
 });
-
-
-
-// JSON Output function
-//
-//
-// var rect = paper
-// .rect(50, 50, 50, 50)
-// .attr('fill', '#f00')
-// .transform('s2')   NOT REQUIRED
-// .rotate(10);       NOT REQUIRED
-//
-// var json = paper.toJSON();
-// console.log(json);
 
 (function () {
     console.log('1');

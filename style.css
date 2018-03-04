@@ -1,9 +1,33 @@
 .paper {
-    margin: 5px auto;
+    /* margin: 5px auto; */
     width: 800px;
     height: 600px;
     position: absolute;
     border: outset 1px #000;
+    cursor: crosshair;
+    top:0;
+    left:0;
+    /* z-index: -1; */
+}
+.wrapper{
+    position: absolute;
+    width:600px;
+    margin:50px;
+    /* width: 50%; */
+    width:500px;
+    height: 500px;
+}
+.left-panel{
+    float: left;
+}
+.right-panel{
+    float:right;
+}
+.left-panel>div,.right-panel>div{
+    padding:10px;
+    width:50px;
+    margin-bottom: 50px;
+    border:1px solid #111;
     cursor: crosshair;
     /* z-index: -1; */
 }

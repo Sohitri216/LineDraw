@@ -5,12 +5,23 @@
 </head>
 
 <body>
-    <input id="arrow" value="Arrow" type="button" />
-    <input id="clr" value="Clear All" type="button" />
-    <div class="paper" id="svg_paper" />
-    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.min.js"></script> -->
-    <script src="http://code.jquery.com/jquery-1.4.3.min.js"></script>
+   
+    <div class="wrapper">
+        <div class="left-panel">
+            <div id="left_D3line1">Data1</div>
+            <div>Data2</div>
+            <div id="left_D3line3">Data3</div>
+        </div>
+        <div class="right-panel">
+            <div>Data2</div>
+            <div id="right_D3line1">Data1</div>
+            <div>Data3</div>
+        </div>
+    </div>
+    <div class="paper" id="svg_paper">
+    </div>
+    <button onclick="clearCanvas()" style="position: absolute;
+    bottom: 13px;">Undo</button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
     <script src="app.js"></script>
 </body>
